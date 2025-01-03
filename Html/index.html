@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--  this is <a> tag use -->
+    <p>You can reach Michael at:</p>
+
+    <ul>
+      <li><a href="https://example.com">Website</a></li>
+      <li><a href="mailto:m.bluth@example.com">Email</a></li>
+      <li><a href="tel:+123456789">Phone</a></li>
+    </ul>
+    <!-- over <a> tag use -->
+
+    <!-- this is <abbr> tag use -->
+    <p>
+      You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your
+      <abbr>HTML</abbr> (HyperText Markup Language). Using style sheets, you can
+      keep your <abbr>CSS</abbr> presentation layer and
+      <abbr>HTML</abbr> content layer separate. This is called "separation of
+      concerns."
+    </p>
+    <!-- over <abbr> tag use -->
+    <!-- this is <acronym> tag use -->
+    <p>
+      The <acronym title="World Wide Web">WWW</acronym> is only a component of
+      the Internet.
+    </p>
+    <!-- over <acronym> tag use -->
+    <p>Contact the author of this page:</p>
+    <!-- this is <address> tag use -->
+    <address>
+      <a href="mailto:jim@example.com">jim@example.com</a><br />
+      <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+    </address>
+    <!-- over <address> tag use -->
+    <br />
+    <!-- this is <area> tag use  like The Image Map Area element-->
+    <map name="primary">
+      <area
+        shape="circle"
+        coords="75,75,75"
+        href="left.html"
+        alt="Click to go Left"
+      />
+      <area
+        shape="circle"
+        coords="275,75,75"
+        href="right.html"
+        alt="Click to go Right"
+      />
+    </map>
+    <img
+      usemap="#primary"
+      src="https://dummyimage.com/350x150"
+      alt="350 x 150 pic"
+    />
+    <!-- over <area> tag use -->
+    <br />
+    <!-- this is <article> tag use -->
+    <article class="forecast">
+      <h1>Weather forecast for Seattle</h1>
+      <article class="day-forecast">
+        <h2>03 March 2018</h2>
+        <p>Rain.</p>
+      </article>
+      <article class="day-forecast">
+        <h2>04 March 2018</h2>
+        <p>Periods of rain.</p>
+      </article>
+    </article>
+    <!-- over <article> tag use -->
+    <br />
+    <!-- this is <aside> tag use -->
+    <p>
+      this first para is : - Salamanders are a group of amphibians with a
+      lizard-like appearance, including short legs and a tail in both larval and
+      adult forms.
+    </p>
+    <aside>
+      <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+    <p>
+      this Secound para is : - Several species of salamander inhabit the
+      temperate rainforest of the Pacific Northwest, including the Ensatina,
+    </p>
+    <!-- over <aside> tag use -->
+    <br />
+    <!-- this is <audio> tag use -->
+    <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+    <!-- over <audio> tag use -->
+    <br />
+    <!-- this is <b> tag use -->
+    <p>
+      <b>Important:</b> The <b>bold</b> tag is not supported in HTML5. Use CSS
+      instead.
+    </p>
+    <!-- over <b> tag use -->
+    <br />
+    <!-- this is <fieldset> tag use -->
+    <form>
+      <fieldset>
+        <legend>Choose your favorite monster</legend>
+
+        <input type="radio" id="kraken" name="monster" value="K" />
+        <label for="kraken">Kraken</label><br />
+
+        <input type="radio" id="sasquatch" name="monster" value="S" />
+        <label for="sasquatch">Sasquatch</label><br />
+
+        <input type="radio" id="mothman" name="monster" value="M" />
+        <label for="mothman">Mothman</label>
+      </fieldset>
+    </form>
+    <!-- over <fieldset> tag use -->
+    <br />
+    <!-- this is <figcaption> tag use -->
+    <iframe
+      id="inlineFrameExample"
+      title="Inline Frame Example"
+      width="300"
+      height="200"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+    >
+    </iframe>
+    <!-- over <figcaption> tag use -->
+    <br />
+    <!-- this is <meter> tag use -->
+    <label for="fuel">Fuel level:</label>
+
+    <meter
+      id="fuel"
+      min="0"
+      max="100"
+      low="33"
+      high="66"
+      optimum="80"
+      value="50"
+    >
+      at 80/100
+    </meter>
+    <!-- over <meter> tag use -->
+    <br />
+    <!-- this is <object> tag use -->
+    <object
+      type="application/pdf"
+      data="WD-Typescript-251224-095828.pdf"
+      width="250"
+      height="350"
+    ></object>
+    <!-- over <object> tag use -->
+    <br />
+    <!-- this is <progress> tag use -->
+    <label for="file">File progress:</label>
+
+    <progress id="file" max="100" value="70">70%</progress>
+    <!-- over <progress> tag use -->
+    <br />
+    <!-- this is <span> tag use -->
+    <p>
+      Add the <span class="ingredient">basil</span>,
+      <span class="ingredient">pine nuts</span> and
+      <span class="ingredient">garlic</span> to a blender and blend into a
+      paste.
+    </p>
+    <!-- over <span> tag use -->
+    <br />
+    <!-- this is <table> tag use -->
+    <table>
+      <caption>
+        Front-end web developer course 2021
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Person</th>
+          <th scope="col">Most interest in</th>
+          <th scope="col">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Chris</th>
+          <td>HTML tables</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <th scope="row">Dennis</th>
+          <td>Web accessibility</td>
+          <td>45</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="2">Average age</th>
+          <td>33</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- over <table> tag use -->
+    <br />
+    <hr />
+    <!-- All the Globel Attributes of HTML -->
+    <h1>All the Globel Attributes List of HTML</h1>
+    <!-- 1. accesskey: Specifies a shortcut key to activate or focus an element -->
+    <button accesskey="s">Submit</button><br />
+    <!-- Press Alt + S (Windows) or Ctrl + Option + S (Mac) -->
+
+    <!-- 2. anchor: Used to define a point for scrolling and focus within an element -->
+    <div anchor="my-anchor">Scroll Here</div>
+    <br />
+
+    <!-- 3. autocapitalize: Controls text capitalization in an editable element -->
+    <input type="text" autocapitalize="words" /><br />
+    <!-- Automatically capitalizes the first letter of each word -->
+
+    <!-- 4. autocorrect: Specifies whether autocorrect should be applied -->
+    <input type="text" autocorrect="off" /><br />
+    <!-- Disables autocorrect -->
+
+    <!-- 5. autofocus: Automatically focuses an element when the page loads -->
+    <input type="text" autofocus /><br />
+    <!-- The input will be focused on page load -->
+
+    <!-- 6. class: Assigns one or more class names for CSS styling or JavaScript manipulation -->
+    <div class="box highlight"></div>
+    <br />
+
+    <!-- 7. contenteditable: Indicates whether the element’s content is editable -->
+    <div contenteditable="true">You can edit this text.</div>
+    <br />
+
+    <!-- 8. data-*: Defines custom data attributes for storing extra information -->
+    <div data-user-id="123">User Info</div>
+    <br />
+
+    <!-- 9. dir: Specifies text direction (ltr, rtl, or auto) -->
+    <p dir="ltr">مرحبا بك</p>
+    <br />
+
+    <!-- 10. draggable: Defines whether an element is draggable -->
+    <img src="image.jpg" draggable="true" /><br />
+
+    <!-- 11. enterkeyhint: Specifies the action for the virtual keyboard "Enter" key -->
+    <input type="text" enterkeyhint="search" /><br />
+    <!-- "Enter" key shows a "Search" action -->
+
+    <!-- 12. exportparts: Allows exporting shadow DOM parts for styling -->
+    <custom-element exportparts="button: my-button"></custom-element><br />
+
+    <!-- 13. hidden: Hides the element -->
+    <p hidden>This text is hidden.</p>
+    <br />
+
+    <!-- 14. id: Defines a unique identifier for an element -->
+    <div id="unique-id"></div>
+    <br />
+
+    <!-- 15. inert: Makes the element and its descendants inert, preventing interaction -->
+    <div inert>This area is disabled.</div>
+    <br />
+
+    <!-- 16. inputmode: Defines the type of virtual keyboard to display -->
+    <input type="text" inputmode="numeric" /><br />
+    <!-- Displays a numeric keypad -->
+
+    <!-- 17. is: Used for defining custom elements -->
+    <my-button is="custom-button"></my-button><br />
+
+    <!-- 18. itemid: Provides a unique identifier for microdata -->
+    <div itemscope itemid="https://example.com"></div>
+    <br />
+
+    <!-- 19. itemprop: Defines properties for microdata items -->
+    <span itemprop="name">John Doe</span><br />
+
+    <!-- 20. itemref: References additional elements for microdata -->
+    <div itemscope itemref="additional-info"></div>
+    <br />
+
+    <!-- 21. itemscope: Defines an item for microdata -->
+    <div itemscope></div>
+    <br />
+
+    <!-- 22. itemtype: Specifies the type of microdata item -->
+    <div itemscope itemtype="http://schema.org/Person"></div>
+    <br />
+
+    <!-- 23. lang: Specifies the language of the element's content -->
+    <p lang="fr">Bonjour le monde!</p>
+    <br />
+
+    <!-- 24. nonce: Prevents inline scripts/styles from being executed if not matching the nonce -->
+    <script nonce="random-value">
+      alert("Secure script");
+    </script>
+    <br />
+
+    <!-- 25. part: Allows shadow DOM parts to be styled -->
+    <div part="header"></div>
+    <br />
+
+    <!-- 26. popover: Controls the popover behavior -->
+    <button popover="dialog">Open Dialog</button><br />
+
+    <!-- 27. slot: Specifies a slot in a shadow DOM -->
+    <slot name="content"></slot><br />
+
+    <!-- 28. spellcheck: Indicates whether spell checking is allowed -->
+    <textarea spellcheck="true"></textarea><br />
+
+    <!-- 29. style: Defines inline CSS styles -->
+    <p style="color: red">This text is red.</p>
+    <br />
+
+    <!-- 30. tabindex: Specifies the element's tab order -->
+    <button tabindex="1">First</button><br />
+    <button tabindex="2">Second</button><br />
+
+    <!-- 31. title: Provides additional information as a tooltip -->
+    <p title="Additional Info">Hover over me.</p>
+    <br />
+
+    <!-- 32. translate: Indicates whether the content should be translated -->
+    <p translate="no">This text will not be translated.</p>
+    <br />
+
+    <!-- 33. virtualkeyboardpolicy: Controls the behavior of the virtual keyboard -->
+    <input type="text" virtualkeyboardpolicy="manual" /><br />
+
+    <!-- 34. writingsuggestions: Specifies writing suggestions for input -->
+    <textarea writingsuggestions="true"></textarea><br />
+    <!-- over All the Globel Attributes of HTML -->
+    <br />
+    <hr />
+    <!-- All the Attributes of HTML -->
+    <h1>All the Attributes List of HTML</h1>
+    <!-- 1. accept: Specifies the types of files that the server accepts -->
+    <h2>File Upload Example</h2>
+    <p>Please upload an image file (PNG or JPEG only):</p>
+    <input type="file" accept=".png, .jpg, .jpeg" /><br />
+    <!-- Only accepts image files with these extensions -->
+
+    <!-- 2. autocomplete: Specifies whether an input field should have autocomplete enabled -->
+    <h2>Form with Autocomplete</h2>
+    <form>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" autocomplete="on" /><br />
+      <!-- Enables autocomplete for email -->
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        autocomplete="current-password"
+      /><br />
+      <!-- Password field with autocomplete -->
+      <button type="submit">Login</button>
+    </form>
+    <br />
+
+    <!-- 3. capture: Specifies which device to use for capturing media -->
+    <h2>Capture Media Example</h2>
+    <p>Take a photo using your camera:</p>
+    <input type="file" accept="image/*" capture="user" /><br />
+    <!-- Captures an image directly from the user -->
+
+    <!-- 4. crossorigin: Indicates if the element should use CORS settings -->
+    <h2>Cross-Origin Resource Example</h2>
+    <img
+      src="https://static.vecteezy.com/system/resources/thumbnails/020/141/626/small/plane-in-the-sky-passenger-commercial-plane-flying-above-the-clouds-concept-of-fast-travel-vacation-and-business-photo.jpg"
+      crossorigin="anonymous"
+      alt="Placeholder Image"
+    /><br />
+    <!-- Loads the image with cross-origin requests -->
+
+    <!-- 5. dirname: Adds a directionality control for the input value -->
+    <h2>Directionality Example</h2>
+    <label for="message">Your Message:</label><br />
+    <input
+      type="text"
+      id="message"
+      name="message"
+      dirname="message.dir"
+    /><br />
+    <!-- Adds directionality information to the submitted data -->
+
+    <!-- 6. disabled: Disables the element, preventing interaction -->
+    <h2>Disabled Input Example</h2>
+    <input type="text" value="This input is disabled" disabled /><br />
+    <!-- The input field is not editable -->
+
+    <!-- 7. elementtiming: Marks the element for performance tracking -->
+    <h2>Performance Tracking Example</h2>
+    <img
+      src="https://via.placeholder.com/200"
+      elementtiming="hero-image"
+      alt="Performance Tracking Image"
+    /><br />
+    <!-- Tracks the performance of the image element -->
+
+    <!-- 8. for: Specifies the element that a label is bound to -->
+    <h2>Label Binding Example</h2>
+    <label for="username">Enter your username:</label><br />
+    <input type="text" id="username" name="username" /><br />
+    <!-- Links the label to the input field -->
+
+    <!-- 9. max: Defines the maximum value for an input -->
+    <h2>Range Input Example</h2>
+    <label for="quantity">Select quantity (up to 10):</label><br />
+    <input type="number" id="quantity" name="quantity" max="10" /><br />
+    <!-- Maximum value allowed is 10 -->
+
+    <!-- 10. maxlength: Specifies the maximum number of characters allowed -->
+    <h2>Text Input Length Example</h2>
+    <input type="text" maxlength="20" placeholder="Max 20 characters" /><br />
+    <!-- Limits input to 20 characters -->
+
+    <!-- 11. min: Defines the minimum value for an input -->
+    <h2>Minimum Value Example</h2>
+    <input type="number" min="1" value="1" /><br />
+    <!-- Minimum value allowed is 1 -->
+
+    <!-- 12. minlength: Specifies the minimum number of characters required -->
+    <h2>Minimum Character Input</h2>
+    <input
+      type="text"
+      minlength="5"
+      placeholder="At least 5 characters"
+    /><br />
+    <!-- Requires at least 5 characters -->
+
+    <!-- 13. multiple: Allows selecting multiple values -->
+    <h2>File Selection Example</h2>
+    <p>Upload multiple documents:</p>
+    <input type="file" multiple /><br />
+    <!-- Enables selection of multiple files -->
+
+    <!-- 14. pattern: Specifies a regular expression for input validation -->
+    <h2>Pattern Validation Example</h2>
+    <p>Enter your name (only letters, at least 3):</p>
+    <input type="text" pattern="[A-Za-z]{3,}" placeholder="e.g., John" /><br />
+    <!-- Requires at least 3 alphabetic characters -->
+
+    <!-- 15. placeholder: Provides a hint or example text in the input field -->
+    <h2>Placeholder Example</h2>
+    <input type="text" placeholder="Enter your address" /><br />
+    <!-- Displays "Enter your address" as a placeholder -->
+
+    <!-- 16. readonly: Makes the input field read-only -->
+    <h2>Read-Only Input Example</h2>
+    <input type="text" value="This value cannot be changed" readonly /><br />
+    <!-- The input is visible but cannot be edited -->
+
+    <!-- 17. rel: Defines the relationship between the current document and the linked document -->
+    <h2>Link Relationship Example</h2>
+    <a href="https://example.com" rel="noopener noreferrer" target="_blank"
+      >Visit Example</a
+    ><br />
+    <!-- Links with safety attributes for new tabs -->
+
+    <!-- 18. required: Makes the field mandatory for form submission -->
+    <h2>Required Input Example</h2>
+    <form>
+      <label for="fullname">Full Name:</label><br />
+      <input type="text" id="fullname" name="fullname" required /><br />
+      <!-- This field must be filled before submitting -->
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+
+    <!-- 19. size: Specifies the width of the input field in characters -->
+    <h2>Input Size Example</h2>
+    <input type="text" size="40" placeholder="40-character width input" /><br />
+    <!-- Displays an input field 40 characters wide -->
+
+    <!-- 20. step: Specifies the increment for numeric inputs -->
+    <h2>Step Increment Example</h2>
+    <input type="number" min="0" max="100" step="5" value="10" /><br />
+    <!-- Allows increments of 5 between 0 and 100 -->
+
+    <br />
+    <hr />
+    <!-- All the Input types of HTML -->
+    <h1>All the Input types List of HTML</h1>
+        <!-- 1. type="button": A clickable button -->
+        <h2>Button Example</h2>
+        <input type="button" value="Click Me"><br>
+        <!-- A simple clickable button -->
+    
+        <!-- 2. type="checkbox": A checkbox for multiple options -->
+        <h2>Checkbox Example</h2>
+        <label><input type="checkbox" name="interest" value="coding"> Coding</label><br>
+        <label><input type="checkbox" name="interest" value="music"> Music</label><br>
+        <!-- Allows users to select multiple options -->
+    
+        <!-- 3. type="color": A color picker -->
+        <h2>Color Picker Example</h2>
+        <label for="favcolor">Choose a color:</label><br>
+        <input type="color" id="favcolor" name="favcolor"><br>
+        <!-- Opens a color picker tool -->
+    
+        <!-- 4. type="date": A date picker -->
+        <h2>Date Picker Example</h2>
+        <label for="dob">Select your date of birth:</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <!-- Lets users select a date -->
+    
+        <!-- 5. type="datetime-local": Selects a date and time -->
+        <h2>Date and Time Picker Example</h2>
+        <label for="appointment">Schedule an appointment:</label><br>
+        <input type="datetime-local" id="appointment" name="appointment"><br>
+        <!-- Combines date and time selection -->
+    
+        <!-- 6. type="email": Input for email addresses -->
+        <h2>Email Input Example</h2>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@example.com"><br>
+        <!-- Ensures email format validation -->
+    
+        <!-- 7. type="file": Uploads a file -->
+        <h2>File Upload Example</h2>
+        <label for="resume">Upload your resume:</label><br>
+        <input type="file" id="resume" name="resume"><br>
+        <!-- Allows file selection -->
+    
+        <!-- 8. type="hidden": Hidden input field -->
+        <h2>Hidden Input Example</h2>
+        <input type="hidden" name="userid" value="12345"><br>
+        <!-- Stores data not visible to the user -->
+    
+        <!-- 9. type="image": A graphical submit button -->
+        <h2>Image Button Example</h2>
+        <input type="image" src="https://static.toiimg.com/photo/80452572.cms?imgsize=156776" alt="Submit"><br>
+        <!-- An image button that submits the form -->
+    
+        <!-- 10. type="month": Selects a month and year -->
+        <h2>Month Picker Example</h2>
+        <label for="birthmonth">Select your birth month:</label><br>
+        <input type="month" id="birthmonth" name="birthmonth"><br>
+        <!-- Lets users pick a month -->
+    
+        <!-- 11. type="number": Input for numeric values -->
+        <h2>Number Input Example</h2>
+        <label for="quantity">Enter quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+        <!-- Ensures only numeric input -->
+    
+        <!-- 12. type="password": Input for passwords -->
+        <h2>Password Input Example</h2>
+        <label for="password">Enter your password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <!-- Masks input for security -->
+    
+        <!-- 13. type="radio": A single-choice option -->
+        <h2>Radio Button Example</h2>
+        <label><input type="radio" name="gender" value="male"> Male</label><br>
+        <label><input type="radio" name="gender" value="female"> Female</label><br>
+        <!-- Allows only one option to be selected -->
+    
+        <!-- 14. type="range": A slider for a range of values -->
+        <h2>Range Slider Example</h2>
+        <label for="volume">Set volume:</label><br>
+        <input type="range" id="volume" name="volume" min="0" max="100"><br>
+        <!-- Provides a slider control -->
+    
+        <!-- 15. type="reset": Resets the form fields -->
+        <h2>Reset Button Example</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <input type="reset" value="Reset Form"><br>
+        </form>
+        <!-- Resets all form fields -->
+    
+        <!-- 16. type="search": A search box -->
+        <h2>Search Input Example</h2>
+        <label for="site-search">Search the site:</label><br>
+        <input type="search" id="site-search" name="search" placeholder="Search here"><br>
+        <!-- Provides a search field -->
+    
+        <!-- 17. type="submit": A form submission button -->
+        <h2>Submit Button Example</h2>
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <input type="submit" value="Submit"><br>
+        </form>
+        <!-- Submits the form data -->
+    
+        <!-- 18. type="tel": Input for telephone numbers -->
+        <h2>Telephone Input Example</h2>
+        <label for="phone">Enter your phone number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890"><br>
+        <!-- Ensures valid phone number format -->
+    
+        <!-- 19. type="text": General text input -->
+        <h2>Text Input Example</h2>
+        <label for="username">Enter your username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Your username"><br>
+        <!-- A basic text input field -->
+    
+        <!-- 20. type="time": Selects a time -->
+        <h2>Time Picker Example</h2>
+        <label for="time">Set a time:</label><br>
+        <input type="time" id="time" name="time"><br>
+        <!-- Lets users select a specific time -->
+    
+        <!-- 21. type="url": Input for URLs -->
+        <h2>URL Input Example</h2>
+        <label for="website">Enter your website URL:</label><br>
+        <input type="url" id="website" name="website" placeholder="https://example.com"><br>
+        <!-- Validates a URL format -->
+    
+        <!-- 22. type="week": Selects a specific week -->
+        <h2>Week Picker Example</h2>
+        <label for="week">Choose a week:</label><br>
+        <input type="week" id="week" name="week"><br>
+        <!-- Allows users to pick a week -->
+
+        
+    
+  </body>
+</html>
