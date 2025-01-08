@@ -1,0 +1,517 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Type Selector */
+p {
+    color: blue;
+}
+
+/* Class Selector */
+.example-class {
+    font-weight: bold;
+}
+
+/* ID Selector */
+#example-id {
+    background-color: lightgray;
+}
+
+/* Grouping Selectors */
+h1, h2 {
+    color: green;
+}
+
+/* Adjacent Sibling Combinator */
+h3 + p {
+    color: red;
+}
+
+/* General Sibling Combinator */
+h4 ~ p {
+    font-style: italic;
+}
+
+/* Direct Child Combinator */
+.parent > span {
+    color: purple;
+}
+
+/* Descendant Combinator */
+.ancestor span {
+    color: orange;
+}
+
+/* CSS Nesting */
+.nested {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.nested p {
+    margin: 10px;
+    color: brown;
+}
+
+/* Compound Selector */
+.compound.example-class {
+    background-color: lightblue;
+}
+
+/* Attribute Selector */
+input[placeholder] {
+    border: 1px solid red;
+}
+
+/* Element Attribute Selector */
+input[type="text"] {
+    background-color: #f0f0f0;
+}
+
+/* Attribute Equals Selector */
+input[checked="checked"] {
+    outline: 2px solid green;
+}
+
+/* Attribute Starts With Selector */
+a[href^="https"] {
+    color: blue;
+}
+
+/* Attribute Contains Selector */
+div[data-info*="Contains"] {
+    font-style: italic;
+}
+
+/* Attribute Ends With Selector */
+img[src$=".png"] {
+    border: 2px solid gray;
+}
+
+/* Attribute Contains Word Selector */
+.token1 {
+    background-color: yellow;
+}
+
+/* Attribute Language Selector */
+div[lang|="en"] {
+    font-family: Arial, sans-serif;
+}
+
+/* Root Selector */
+:root {
+    --main-color: #ff6347;
+}
+
+/* First Child Selector */
+ul li:first-child {
+    color: green;
+}
+
+/* Last Child Selector */
+ul li:last-child {
+    color: red;
+}
+
+/* Nth Child Selector */
+ul li:nth-child(2) {
+    color: purple;
+}
+
+/* Nth Last Child Selector */
+ol li:nth-last-child(2) {
+    color: orange;
+}
+
+/* Nth of Type Selector */
+div p:nth-of-type(2) {
+    color: teal;
+}
+
+/* Nth Last of Type Selector */
+div p:nth-last-of-type(2) {
+    color: salmon;
+}
+
+/* First of Type Selector */
+div p:first-of-type {
+    font-weight: bold;
+}
+
+/* Last of Type Selector */
+div p:last-of-type {
+    text-decoration: underline;
+}
+
+/* Only of Type Selector */
+div p:only-of-type {
+    color: navy;
+}
+
+/* Only Child Selector */
+div span:only-child {
+    color: darkgreen;
+}
+
+/* Empty Selector */
+div:empty {
+    border: 1px dashed black;
+}
+
+/* Hover Selector */
+button:hover {
+    background-color: lightgray;
+}
+
+/* Active Selector */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Focus Selector */
+input:focus {
+    outline: 2px solid blue;
+}
+
+/* Focus Visible Selector */
+input:focus-visible {
+    border: 2px dashed purple;
+}
+
+/* Focus Within Selector */
+form:focus-within {
+    border: 2px solid green;
+}
+
+/* Autofill Selector */
+input:-webkit-autofill {
+    background-color: lightyellow;
+}
+
+/* Disabled Selector */
+input:disabled {
+    background-color: lightgray;
+}
+
+/* Enabled Selector */
+input:enabled {
+    background-color: white;
+}
+
+/* Placeholder Shown Selector */
+input:placeholder-shown {
+    color: gray;
+}
+
+/* Read-Only Selector */
+input:read-only {
+    background-color: #e0e0e0;
+}
+
+/* Read-Write Selector */
+input:read-write {
+    background-color: white;
+}
+
+/* Default Selector */
+option:default {
+    font-weight: bold;
+}
+
+/* Checked Selector */
+input:checked {
+    outline: 2px solid green;
+}
+
+/* Indeterminate Selector */
+progress:indeterminate {
+    background-color: lightblue;
+}
+
+/* Valid Selector */
+input:valid {
+    border: 2px solid green;
+}
+
+/* Invalid Selector */
+input:invalid {
+    border: 2px solid red;
+}
+
+/* User-Valid Selector */
+input:user-valid {
+    color: darkgreen;
+}
+
+/* User-Invalid Selector */
+input:user-invalid {
+    color: darkred;
+}
+
+/* In Range Selector */
+input:in-range {
+    border-color: green;
+}
+
+/* Out of Range Selector */
+input:out-of-range {
+    border-color: red;
+}
+
+/* Required Selector */
+input:required {
+    background-color: lightyellow;
+}
+
+/* Optional Selector */
+input:optional {
+    background-color: white;
+}
+
+/* Link Selector */
+a:link {
+    color: blue;
+}
+
+/* Visited Selector */
+a:visited {
+    color: purple;
+}
+
+/* Any-Link Selector */
+a:any-link {
+    text-decoration: underline;
+}
+
+/* Target Selector */
+:target {
+    background-color: yellow;
+}
+
+/* Scope Selector */
+:scope {
+    border: 2px solid black;
+}
+
+/* Defined Selector */
+element:defined {
+    background-color: lightgreen;
+}
+
+/* Fullscreen Selector */
+:fullscreen {
+    background-color: black;
+}
+
+/* Modal Selector */
+:modal {
+    background-color: lightgray;
+}
+
+/* Picture-in-Picture Selector */
+:picture-in-picture {
+    border: 2px dashed red;
+}
+
+/* Is Selector */
+:is(h1, h2, h3) {
+    color: green;
+}
+
+/* Where Selector */
+:where(h1, h2, h3) {
+    color: blue;
+}
+
+/* Not Selector */
+:not(.exclude) {
+    color: red;
+}
+
+/* Has Selector */
+div:has(img) {
+    border: 2px solid black;
+}
+
+/* Popover-Open Selector */
+:popover-open {
+    background-color: lightblue;
+}
+
+/* Dir Selector */
+:dir(rtl) {
+    text-align: right;
+}
+
+/* Lang Selector */
+:lang(en) {
+    font-family: Arial, sans-serif;
+}
+
+/* Before Pseudo-Element */
+button::before {
+    content: "Click: ";
+}
+
+/* After Pseudo-Element */
+button::after {
+    content: " !";
+}
+
+/* First Letter Pseudo-Element */
+p::first-letter {
+    font-size: 2em;
+}
+
+/* First Line Pseudo-Element */
+p::first-line {
+    font-weight: bold;
+}
+
+/* Backdrop Pseudo-Element */
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Cue Pseudo-Element */
+::cue {
+    color: blue;
+}
+
+/* File Selector Button Pseudo-Element */
+input[type="file"]::file-selector-button {
+    background-color: lightgray;
+}
+
+/* Marker Pseudo-Element */
+li::marker {
+    color: red;
+}
+
+/* Placeholder Pseudo-Element */
+input::placeholder {
+    color: gray;
+}
+
+/* Selection Pseudo-Element */
+::selection {
+    background-color: yellow;
+}
+
+/* Host Selector */
+:host {
+    display: block;
+}
+
+/* Part Selector */
+::part(header) {
+    background-color: lightblue;
+}
+
+/* Slotted Selector */
+::slotted(div) {
+    background-color: lightyellow;
+}
+
+/* Target Text Selector */
+::target-text {
+    font-weight: bold;
+}
+
+/* Host Context Selector */
+:host-context(.dark) {
+    background-color: black;
+}
+
+/* Blank Selector */
+input:blank {
+    border: 1px dashed gray;
+}
+
+/* Local Link Selector */
+a:local-link {
+    text-decoration: underline;
+}
+
+/* Target Within Selector */
+:target-within {
+    background-color: lightgreen;
+}
+
+/* Playing Selector */
+:playing {
+    background-color: lightblue;
+}
+
+/* Paused Selector */
+:paused {
+    background-color: lightyellow;
+}
+
+/* Buffering Selector */
+:buffering {
+    background-color: lightgray;
+}
+
+/* Muted Selector */
+:muted {
+    background-color: lightpink;
+}
+
+/* Seeking Selector */
+:seeking {
+    border: 1px dashed black;
+}
+
+/* Stalled Selector */
+:stalled {
+    background-color: lightgray;
+}
+
+/* Volume Locked Selector */
+:volume-locked {
+    border: 1px solid red;
+}
+
+/* Current Selector */
+:current {
+    font-style: italic;
+}
+
+/* Past Selector */
+:past {
+    text-decoration: line-through;
+}
+
+/* Future Selector */
+:future {
+    font-weight: bold;
+}
+
+/* Cue Region Pseudo-Element */
+::cue-region {
+    background-color: lightblue;
+}
+
+/* Grammar Error Pseudo-Element */
+::grammar-error {
+    text-decoration: wavy red underline;
+}
+
+/* Spelling Error Pseudo-Element */
+::spelling-error {
+    text-decoration: wavy blue underline;
+}
+
+/* CSS Trick 1 */
+.div-gradient {
+    background: linear-gradient(to right, red, yellow);
+}
+
+/* CSS Trick 2 */
+.text-shadow {
+    text-shadow: 2px 2px 5px gray;
+}

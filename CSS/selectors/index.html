@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Full Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 1. Universal Selector -->
+    <div>Universal Selector Example</div>
+
+    <!-- 2. Type Selector -->
+    <p>Type Selector Example</p>
+
+    <!-- 3. Class Selector -->
+    <div class="example-class">Class Selector Example</div>
+
+    <!-- 4. ID Selector -->
+    <div id="example-id">ID Selector Example</div>
+
+    <!-- 5. Grouping Selectors -->
+    <h1>Grouping Selector Example</h1>
+    <h2>Another Grouping Selector Example</h2>
+
+    <!-- 6. Adjacent Sibling Combinator -->
+    <h3>Adjacent Sibling 1</h3>
+    <p>Adjacent Sibling 2</p>
+
+    <!-- 7. General Sibling Combinator -->
+    <h4>General Sibling 1</h4>
+    <p>General Sibling 2</p>
+
+    <!-- 8. Direct Child Combinator -->
+    <div class="parent">
+      <span>Direct Child</span>
+    </div>
+
+    <!-- 9. Descendant Combinator -->
+    <div class="ancestor">
+      <span>Descendant</span>
+    </div>
+
+    <!-- 10. CSS Nesting -->
+    <div class="nested">
+      <p>CSS Nesting Example</p>
+    </div>
+
+    <!-- 11. Compound Selector -->
+    <div class="compound example-class">Compound Selector Example</div>
+
+    <!-- 12. [attribute] -->
+    <input placeholder="[attribute] Example" />
+
+    <!-- 13. element[attribute] -->
+    <input type="text" placeholder="element[attribute] Example" />
+
+    <!-- 14. [attribute="value"] -->
+    <input type="checkbox" checked="checked" />
+
+    <!-- 15. [attribute^="value"] -->
+    <a href="https://example.com">Starts with Selector</a>
+
+    <!-- 16. [attribute*="value"] -->
+    <div data-info="Contains Example">Contains Selector</div>
+
+    <!-- 17. [attribute$="value"] -->
+    <img src="image.png" alt="Ends With Selector" />
+
+    <!-- 18. [attribute~="value"] -->
+    <div class="token1 token2">Contains Word Selector</div>
+
+    <!-- 19. [attribute|="value"] -->
+    <div lang="en-US">Language Selector</div>
+
+    <!-- 20. :root -->
+    <div>:root Selector Example</div>
+
+    <!-- 21. :first-child -->
+    <ul>
+      <li>First Child Example</li>
+      <li>Another Child</li>
+    </ul>
+
+    <!-- 22. :last-child -->
+    <ul>
+      <li>First Item</li>
+      <li>Last Child Example</li>
+    </ul>
+
+    <!-- 23. :nth-child() -->
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ul>
+
+    <!-- 24. :nth-last-child() -->
+    <ol>
+      <li>First Item</li>
+      <li>Second Last</li>
+      <li>Last Item</li>
+    </ol>
+
+    <!-- 25. :nth-of-type() -->
+    <div>
+      <p>First Paragraph</p>
+      <p>Second Paragraph</p>
+    </div>
+
+    <!-- 26. :nth-last-of-type() -->
+    <div>
+      <p>Another Paragraph</p>
+      <p>Last Paragraph</p>
+    </div>
+
+    <!-- 27. :first-of-type -->
+    <div>
+      <p>First of Type Example</p>
+      <p>Another Paragraph</p>
+    </div>
+
+    <!-- 28. :last-of-type -->
+    <div>
+      <p>First Paragraph</p>
+      <p>Last of Type Example</p>
+    </div>
+
+    <!-- 29. :only-of-type -->
+    <div>
+      <p>Only of Type Example</p>
+    </div>
+
+    <!-- 30. :only-child -->
+    <div>
+      <span>Only Child Example</span>
+    </div>
+
+    <!-- 31. :empty -->
+    <div>:empty Selector Example</div>
+
+    <!-- 32. :hover -->
+    <button>Hover Me</button>
+
+    <!-- 33. :active -->
+    <button>Click Me</button>
+
+    <!-- 34. :focus -->
+    <input type="text" placeholder="Focus Me" />
+
+    <!-- 35. :focus-visible -->
+    <input type="text" placeholder="Focus Visible Example" />
+
+    <!-- 36. :focus-within -->
+    <form>
+      <input type="text" placeholder="Focus Within Example" />
+    </form>
+
+    <!-- Autofill -->
+    <form>
+      <input type="text" autocomplete="on" placeholder="Autofill Example" />
+    </form>
+
+    <!-- Disabled -->
+    <input type="text" disabled value="Disabled Input" />
+
+    <!-- Enabled -->
+    <input type="text" value="Enabled Input" />
+
+    <!-- Placeholder-Shown -->
+    <input type="text" placeholder="Placeholder Shown Example" />
+
+    <!-- Read-Only -->
+    <input type="text" readonly value="Read-Only Input" />
+
+    <!-- Read-Write -->
+    <input type="text" value="Read-Write Input" />
+
+    <!-- Default -->
+    <select>
+      <option>Default Option</option>
+      <option>Another Option</option>
+    </select>
+
+    <!-- Checked -->
+    <input type="checkbox" checked />
+    <input type="radio" checked />
+
+    <!-- Indeterminate -->
+    <progress max="100"></progress>
+
+    <!-- Valid -->
+    <input type="email" value="example@example.com" />
+
+    <!-- Invalid -->
+    <input type="email" value="invalid-email" />
+
+    <!-- User-Valid -->
+    <input type="text" pattern="^[A-Za-z]+$" value="ValidInput" />
+
+    <!-- User-Invalid -->
+    <input type="text" pattern="^[A-Za-z]+$" value="123" />
+
+    <!-- In-Range -->
+    <input type="number" min="10" max="20" value="15" />
+
+    <!-- Out-of-Range -->
+    <input type="number" min="10" max="20" value="25" />
+
+    <!-- Required -->
+    <input type="text" required />
+
+    <!-- Optional -->
+    <input type="text" placeholder="Optional Input" />
+
+    <!-- Link -->
+    <a href="https://example.com">Visit Example</a>
+
+    <!-- Visited -->
+    <a href="#visited" class="visited-link">Visited Link</a>
+
+    <!-- Target -->
+    <a href="#target">Jump to Target</a>
+    <div id="target">Target Content</div>
+
+    <!-- Fullscreen -->
+    <video controls>
+      <source src="sample.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Modal -->
+    <dialog open>This is a modal dialog.</dialog>
+
+    <!-- Is, Where -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+    <!-- Not -->
+    <div class="exclude">Excluded</div>
+    <div>Included</div>
+
+    <!-- Has -->
+    <div>
+      <img src="example.png" alt="Example" />
+    </div>
+
+    <!-- Dir -->
+    <div dir="rtl">Right-to-Left Text</div>
+
+    <!-- Before, After -->
+    <button>Click Me</button>
+
+    <!-- First Letter -->
+    <p>First letter styled paragraph.</p>
+
+    <!-- Selection -->
+    <p>Select this text to see the effect.</p>
+
+    <!-- CSS Trick 1 -->
+    <div class="div-gradient">Gradient Background</div>
+
+    <!-- CSS Trick 2 -->
+    <p class="text-shadow">Text Shadow Effect</p>
+
+    <!-- Continue with remaining examples... -->
+  </body>
+</html>

@@ -155,9 +155,9 @@ a {
 
 .flex-Ex {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 20px;
-  align-items: center;
+ align-items: center; 
   text-align: center;
   width: 800px;
   height: 300px;
