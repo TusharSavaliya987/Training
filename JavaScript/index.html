@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="">
-</head>
-<body>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
     <!-- <div>ABC</div>
     <h1 class="heading-class">hi i am tushar</h1>
     <h1 class="heading">JavaScript</h1>
@@ -15,8 +15,65 @@
     <button>click me</button> -->
     <!-- <script src="script.js"></script> -->
     <!-- <script src="object.js"></script> -->
-    <script src="function.js"></script>
-    <script src="event.js"></script>
-</body>
+    <!-- <script src="function.js"></script>
+    <script src="event.js"></script> -->
+    <!-- <script src="ErrorHandaling.js"></script> -->
+    <script src="Module.js"></script>
+    <script type="module">
+      import { sayHi } from "./say.js";
 
+      document.body.innerHTML = sayHi("John");
+
+
+    //       What is import.meta?
+    //      import.meta is an object that gives information about the current module.
+    // For example:
+
+    <script type="module">
+    alert(import.meta.url); // Shows the script's URL
+    </script>
+
+
+    // Top-level this in Modules
+    // In modules, this is undefined.
+    // In regular scripts, this refers to the global object (window in browsers).
+
+    // Example:
+
+
+    <script>
+    alert(this); // Shows: window
+    </script>
+
+    <script type="module">
+    alert(this); // Shows: undefined
+    </script>
+
+    // Special Features of Module Scripts
+    // Module Scripts are Deferred:
+
+    // Module scripts don’t block HTML loading; they load in parallel.
+    // They wait until the entire HTML is processed before running.
+    // They maintain the order they appear in the document.
+    // Example:
+
+
+    <script type="module">
+    alert(typeof button); // Can "see" the button below (runs after HTML loads)
+    </script>
+
+    <script>
+    alert(typeof button); // Can't "see" the button below (runs immediately)
+    </script>
+
+    <button id="button">Button</button>
+
+    //Inline Module Scripts with async:
+    <script async type="module">
+        import { counter } from './analytics.js';
+        counter.count();
+    </script>
+
+    </script>
+  </body>
 </html>
