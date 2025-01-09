@@ -1,0 +1,24 @@
+<!-- HTML-attribute -->
+<input value="Click me" onclick="alert('Click!')" type="button">
+
+<!-- HTML-attribute with use of countRabbits(): -->
+<script>
+    function countRabbits() {
+      for(let i=1; i<=3; i++) {
+        alert("Rabbit number " + i);
+      }
+    }
+  </script>
+  
+  <input type="button" onclick="countRabbits()" value="Count rabbits!">
+
+<!-- DOM property like elem.onclick:- If the handler is assigned using an HTML-attribute then the browser reads it, creates a new function from the attribute content and writes it to the DOM property. -->
+<input id="elem" type="button" value="Click me">
+<script>
+  elem.onclick = function() {
+    alert('Thank you');
+  };
+</script>
+
+<!-- Accessing the element: this -->
+<button onclick="alert(this.innerHTML)">Click me</button>
