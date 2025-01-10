@@ -18,7 +18,48 @@
     <!-- <script src="function.js"></script>
     <script src="event.js"></script> -->
     <!-- <script src="ErrorHandaling.js"></script> -->
-    <script src="Module.js"></script>
+    <!-- <script src="Module.js"></script> -->
+    <script src="Forms&Controls.js"></script>
+
+
+
+    <!-- Code For only Form properties and methods start -->
+    <form name="my">
+      <input name="one" value="1">
+      <input name="two" value="2">
+      <input type="radio" name="age" value="10">
+      <input type="radio" name="age" value="20">
+      <fieldset name="userFields">
+        <legend>info</legend>
+        <input name="login" type="text">
+      </fieldset>
+    </form>
+
+    <script>
+      // get the form
+      let form = document.forms.my; // <form name="my"> element
+    
+      // get the element
+      let elem = form.elements.one; // <input name="one"> element
+    
+      alert(elem.value); // 1
+
+      let form = document.forms[0];
+
+      let ageElems = form.elements.age;
+
+      alert(ageElems[0]); // [object HTMLInputElement]
+
+      alert(form.elements.login); // <input name="login">
+
+      let fieldset = form.elements.userFields;
+      alert(fieldset); // HTMLFieldSetElement
+
+      // we can get the input by name both from the form and from the fieldset
+      alert(fieldset.elements.login == form.elements.login); // true
+    </script>
+    <!-- Code For only Form properties and methods end -->
+
     <script type="module">
       import { sayHi } from "./say.js";
 
