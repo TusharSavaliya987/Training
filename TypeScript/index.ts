@@ -10,6 +10,8 @@ function display(id: number, name: string) {
   console.log("Id = " + id + ", Name = " + name);
 }
 
+console.log(display(101, "Abhishek"));
+
 //Type Annotation in Object
 var employee: {
   id: number;

@@ -9,6 +9,7 @@ var isUpdated = true; // `isUpdated` must be true/false
 function display(id, name) {
     console.log("Id = " + id + ", Name = " + name);
 }
+console.log(display(101, "Abhishek"));
 //Type Annotation in Object
 var employee;
 employee = {
