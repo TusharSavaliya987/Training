@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">MovieDB</div>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search movies..." />
+          <button id="searchButton">Search</button>
+        </div>
+      </nav>
+    </header>
 
-    <!-- Create grid View task-->
-    <div class="container">
-        <div class="item item-1">Item 1</div>
-        <div class="item item-2">Item 2</div>
-        <div class="item item-3">Item 3</div>
+    <main>
+      <div class="categories">
+        <button class="category-btn active" data-category="popular">
+          Popular
+        </button>
+        <button class="category-btn" data-category="top_rated">
+          Top Rated
+        </button>
+        <button class="category-btn" data-category="upcoming">Upcoming</button>
       </div>
-</body>
+
+      <div class="movies-grid" id="moviesContainer">
+        <!-- Movies will be inserted here by JavaScript -->
+      </div>
+
+      <div class="pagination" id="pagination">
+        <button id="prevPage">Previous</button>
+        <span id="currentPage">1</span>
+        <button id="nextPage">Next</button>
+      </div>
+    </main>
+
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="movieDetails"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
+<!-- f1c53655a638c2d66122acdc0d45d534 -->
