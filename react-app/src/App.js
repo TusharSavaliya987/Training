@@ -7,13 +7,15 @@ import { PackingList, PackingLists } from './components/ConditionalRendering';
 import { CardComposition, CardChildren } from './components/Composition';
 import { ItemListFilter,ItemListMap } from './components/RenderList';
 import { CounterRefs , CounterState, Chat, Toggle, Dashboard, Chats} from './components/refs';
+import ParentComponent from './hooks/Hooks';
+
 
 import {Counter, UpdatingObj, UpdateArr,ArrayObject,ResetKey} from './hooks/useState'
 import { DataFetcher } from './hooks/useEffect';
 function App() {
   return (
     <div>
-     <MyApp/>
+     {/* <MyApp/>
      <Bio/>
      <ToDoList/>
      <TodoList/>
@@ -63,7 +65,8 @@ function App() {
     <ArrayObject/><br/>
     <ResetKey/>
 
-    {/* <DataFetcher/> */}
+    <DataFetcher/> */}
+    <ParentComponent/>  
     </div>
 
    
